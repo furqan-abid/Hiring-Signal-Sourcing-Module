@@ -42,7 +42,7 @@ Railway: `railway up` — `railway.json` pins build (`npm install && npm run bui
 ```bash
 curl -sX POST "$MODULE_URL/run" -H "content-type: application/json" -d '{
   "default_inputs": {
-    "sourcing_config_id": "11111111-1111-1111-1111-111111111111",
+    "sourcing_config_id": "15e3ed02-e0a2-46da-8f2b-4672e3f496a6",
     "client_id": "22222222-2222-2222-2222-222222222222",
     "icp_config": {
       "segment": {
