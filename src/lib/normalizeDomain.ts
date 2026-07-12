@@ -24,7 +24,7 @@ export function normalizeDomain(input: string | null | undefined): string | null
   return s;
 }
 
-/** Leading subdomain labels that denote a careers/recruiting host, not the company. */
+/** Leading subdomain labels that denote a careers/portal host, not the company identity. */
 const CAREERS_PREFIXES = new Set([
   'careers',
   'career',
@@ -39,6 +39,8 @@ const CAREERS_PREFIXES = new Set([
   'hiring',
   'employment',
   'join',
+  'mychart', // Epic patient-portal subdomain (mychart.hfhs.org → hfhs.org)
+  'gfj', // google-for-jobs feed subdomain (gfj.smh.com → smh.com)
 ]);
 
 /**
@@ -79,6 +81,7 @@ const AGGREGATOR_DOMAINS = new Set([
   'remote.co',
   'weworkremotely.com',
   'wellfound.com',
+  'bebee.com',
   'builtin.com',
   'doccafe.com',
   'jobrapido.com',
@@ -97,6 +100,17 @@ const AGGREGATOR_DOMAINS = new Set([
   'startup.jobs',
   'otta.com',
   'welcometothejungle.com',
+  // Healthcare-specific job boards / societies / unions (surfaced in live runs)
+  'womenforhire.com',
+  'pedjobs.org',
+  'nejmcareercenter.org',
+  'asahq.org',
+  'afgenvac.org',
+  'healthecareers.com',
+  'practicelink.com',
+  'practicematch.com',
+  'gaswork.com',
+  'healthjobsnationwide.com',
   // ATS / recruiting platforms (careers pages hosted on a vendor domain)
   'lever.co',
   'greenhouse.io',
@@ -117,6 +131,11 @@ const AGGREGATOR_DOMAINS = new Set([
   'adp.com',
   'ceipal.com',
   'paycomonline.net',
+  'oraclecloud.com',
+  'career-pages.com',
+  'successfactors.com',
+  'eightfold.ai',
+  'dayforcehcm.com',
   // Generic web properties
   'jobs.google.com',
   'google.com',

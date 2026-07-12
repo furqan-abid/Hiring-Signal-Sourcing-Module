@@ -1,0 +1,51 @@
+{
+  "default_inputs": {
+    "sourcing_config_id": "15e3ed02-e0a2-46da-8f2b-4672e3f496a6",
+    "client_id": "22222222-2222-2222-2222-222222222222",
+    "icp_config": {
+      "market": {
+        "id": "m1",
+        "name": "US Healthcare",
+        "market": "healthcare",
+        "market_tag": ""
+      },
+      "segment": {
+        "id": "s1",
+        "icp_config_id": "c1",
+        "company_sizes": [
+          "51-200",
+          "201-500",
+          "501-1000",
+          "1001-5000",
+          "5001-10,000"
+        ],
+        "geos": [
+          "United States"
+        ],
+        "fixed_signals": [
+          "hiring for Anesthesia and CRNA"
+        ],
+        "custom_signals": [],
+        "free_text_qualifier": "Look for healthcare providers which have got open roles for Anesthesia and CRNA"
+      },
+      "persona": {
+        "id": "p1",
+        "icp_config_id": "c1",
+        "segment_id": "s1",
+        "seniority": {
+          "CXO": "include",
+          "Director": "include"
+        },
+        "job_titles": [
+          "Chief Nursing Officer",
+          "VP Anesthesia Services"
+        ]
+      }
+    }
+  },
+  "module_inputs": {
+    "lookback_days": 14,
+    "max_companies": 50,
+    "search_queries_override": null
+  }
+}
